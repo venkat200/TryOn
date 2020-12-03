@@ -1,2 +1,3 @@
 # TryOn
- A Shopping AR Experience of the Products, Explore and Learn about the product
+ An AR Shopping Experience of the Products, Explore and Learn about the product in the our own space
+
