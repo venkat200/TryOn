@@ -22,10 +22,4 @@ public class ARController : MonoBehaviour
         }
     }
 
-
-    public void Function1()
-    {
-
-    }
-
 }
