@@ -21,4 +21,11 @@ public class ARController : MonoBehaviour
             GameObject placedObject = Instantiate(Object, placementController.transform.position, placementController.transform.rotation);
         }
     }
+
+
+    public void Function1()
+    {
+
+    }
+
 }
