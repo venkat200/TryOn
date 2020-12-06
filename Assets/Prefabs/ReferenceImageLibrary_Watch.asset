@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 848409ee8ba454f42a5ddff137688a27, type: 3}
+  m_Name: ReferenceImageLibrary_Watch
+  m_EditorClassIdentifier: 
+  m_GuidLow: 4959519941666657498
+  m_GuidHigh: 4692059560970157236
+  m_Images:
+  - m_SerializedGuid:
+      m_GuidLow: 5678417134548463369
+      m_GuidHigh: 7581318288303247286
+    m_SerializedTextureGuid:
+      m_GuidLow: 8702186488141900289
+      m_GuidHigh: 11757997073513699322
+    m_Size: {x: 0.1, y: 0.10533563}
+    m_SpecifySize: 1
+    m_Name: ImageTrackingWatch
+    m_Texture: {fileID: 2800000, guid: 3ae6ea01608178c4fad7ddb40acc2ca3, type: 3}
