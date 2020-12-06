@@ -1,0 +1,487 @@
+fileFormatVersion: 2
+guid: b2c9fba79463f5b479bc99753f89134b
+ModelImporter:
+  serializedVersion: 19301
+  internalIDToNameTable: []
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: BOWL
+    second: {fileID: 2100000, guid: d1f2875fde587684d93bb0de91893b30, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body
+    second: {fileID: 2100000, guid: 0f79de4696f6e994a80116adc55bdcdf, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Labels_02
+    second: {fileID: 2100000, guid: 3bf59e85cd5e94042936cee9dc26bcc7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Labels_03
+    second: {fileID: 2100000, guid: aa27c03cff12f6a4fa6aee10b3f04760, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Labels_04
+    second: {fileID: 2100000, guid: 927c08daaf7a44641a212a35dd5c30c7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottles_Label_05
+    second: {fileID: 2100000, guid: f49900ee3cdca1746943cce47a42b93f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bottles_Labels_01
+    second: {fileID: 2100000, guid: 9b39956f5093d4747979ff1c5fd6e383, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Bown2
+    second: {fileID: 2100000, guid: d24cd32cc822acc4aa9dda3c645e643b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CleanMetal_01
+    second: {fileID: 2100000, guid: 562bcb22737ad8242bcbc2b5e0ed645a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Clear_Glass_01
+    second: {fileID: 2100000, guid: 27dccf52215583248a9b40dcc9212cd5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Display_Sequence
+    second: {fileID: 2100000, guid: ee75cee02c9baa44ea3284e176346ec1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Middle
+    second: {fileID: 2100000, guid: 4697dc74010811f4bb6f31c0c8c5cab5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Egg
+    second: {fileID: 2100000, guid: 8f20e8746ffd7374ebf92bea19f0a294, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fish_Box
+    second: {fileID: 2100000, guid: 69d29ee95c96b4246b374b0cd46c6b01, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fruits
+    second: {fileID: 2100000, guid: 1a9cd5dda7242544a8cc816fe73d5db1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_BBQ_Sauce_01
+    second: {fileID: 2100000, guid: 5712985c52ee7d0428fbafad33b1ec33, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Butter_01
+    second: {fileID: 2100000, guid: 14c55995724bcb3408ffe00439bbd876, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Ghee_01
+    second: {fileID: 2100000, guid: bd99fc226c7e6574b813278ea6687dd3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_HoneyMustard_01
+    second: {fileID: 2100000, guid: 3e410b2a9840da244a7e62108b3be379, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Jam_01
+    second: {fileID: 2100000, guid: 153eab2490943794eab8409b23a87045, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Mayo_01
+    second: {fileID: 2100000, guid: e65297d7a82167949a9f46fcfd332ba2, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Peanut_Butter_01
+    second: {fileID: 2100000, guid: 772e56cc130b5c747a34035ab471895c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Glass_Tomato_01
+    second: {fileID: 2100000, guid: e0eea7c69876514439ca5160893b5216, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Grapes
+    second: {fileID: 2100000, guid: 1a718552539237e488b39bb12f9a4b8d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IceCream_Container_01
+    second: {fileID: 2100000, guid: c5b3e4787d6224c488843e11116bbc37, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: IceCream_Container_02
+    second: {fileID: 2100000, guid: 15f1ddaa46293474f80121198800acd7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Jar4
+    second: {fileID: 2100000, guid: 2b8e8e78cf597c947b19d3145e8e60dd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: JuiceBottle_Red_001
+    second: {fileID: 2100000, guid: 06606c6dd5ae204428861843e97b8d98, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meat
+    second: {fileID: 2100000, guid: 8ecf8f554d542d9428d47ede63c3c759, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Meat1
+    second: {fileID: 2100000, guid: a1c9999c2cd9ee249bd2cb91b2ebec9d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MilkJar_01
+    second: {fileID: 2100000, guid: e6df79e36f853bf48b808d85788f06f8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MilkPacket_01
+    second: {fileID: 2100000, guid: be1b07c80ff566d4ab2a76df3bc8a72d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sachet_01
+    second: {fileID: 2100000, guid: 058740a80152f9143a022a2a0be19e2b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sprouts_01
+    second: {fileID: 2100000, guid: 1f3419002c8e1ac4e97a85f33f346708, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sprouts_02
+    second: {fileID: 2100000, guid: d24214a3371e0d8449910109d5ea1f84, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Veggies_01
+    second: {fileID: 2100000, guid: 4e6cd93b5d440dd47b9c96ea2f4c20fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: body2_blinn1SG1
+    second: {fileID: 2100000, guid: 69933a0e37f8e2c47b08b23171c18997, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: display
+    second: {fileID: 2100000, guid: ba351a7895cf39a498e508580ade76f0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: door
+    second: {fileID: 2100000, guid: 5517964516422f046a52d42cc27a3a43, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass
+    second: {fileID: 2100000, guid: f1fcf760016c9c3459be0cdb0d7bccc4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: glass_with_ice
+    second: {fileID: 2100000, guid: 47606a92bc30a9849928508a7eacb41a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: jar_1
+    second: {fileID: 2100000, guid: c8f393fe4beb1034da9c9b8359775cd1, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lemon
+    second: {fileID: 2100000, guid: a49f51ebaf4f7ad4a9a206f5ed316f9c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: plastic
+    second: {fileID: 2100000, guid: 9d05c2c09d9aa1347bdd59452124f9d7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: saled
+    second: {fileID: 2100000, guid: 10669271319770d43b0ed1b1c9f87b97, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: shake
+    second: {fileID: 2100000, guid: 633c2bcd959ba354cab1506d4182f4fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: vegetables
+    second: {fileID: 2100000, guid: a76ce9fc51822a5458f595d42c8e445c, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BOWL
+    second: {fileID: 2800000, guid: 845012453fedaf546ade761d16c589d8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: BOWL_2
+    second: {fileID: 2800000, guid: 79f0a6d12820cb643a9362c7c210784c, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Label_01_Diffuse
+    second: {fileID: 2800000, guid: 7415d9da12d85724eb4891304d718174, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Label_02_Diffuse
+    second: {fileID: 2800000, guid: e4b15274754b5184a96faea19ac1546a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Label_03_Diffuse
+    second: {fileID: 2800000, guid: 881d2e9ab3b631e4ea58229fde556c76, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Label_04_Diffuse
+    second: {fileID: 2800000, guid: dd043dcbb2cd6824e9a5c51a6095b6ac, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Bottle_Label_05_Diffuse
+    second: {fileID: 2800000, guid: 931a95ea5f66d334980a9e463cef2b45, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Door_middle _base colour
+    second: {fileID: 2800000, guid: 17dca1437f11d384485686b9b4b15dcf, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Egg
+    second: {fileID: 2800000, guid: e75376ef651c632409b1e80bf871370d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Fruits
+    second: {fileID: 2800000, guid: 9a96e2b76b501024e8aa7b47c7b65c58, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IceCream_Container_01_Diffuse
+    second: {fileID: 2800000, guid: e13c5c6c91b69924fa7ed2817e9570b3, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: IceCream_Container_02_Diffuse
+    second: {fileID: 2800000, guid: 613b9a3b756885341b671d6d02ba0ddb, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MilkJar_01_Diffuse
+    second: {fileID: 2800000, guid: 31e1b257dde2a5041876776ead2a108e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: MilkPacket_01_Diffuse
+    second: {fileID: 2800000, guid: f9859df786b47aa4b9c6c5038d84a3d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sachet_01
+    second: {fileID: 2800000, guid: 7f9825f667a0c9c4480705b51d000427, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sprouts_01_Diffuse
+    second: {fileID: 2800000, guid: de29adde485bdd1459b6777934bd3994, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Sprouts_02_Diffuse
+    second: {fileID: 2800000, guid: 22a8c6211506f4d4ca767cffb3b39255, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: Veggies_01
+    second: {fileID: 2800000, guid: 4982ecc03b3912042a38ed3e0033131b, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: body_BaseColor
+    second: {fileID: 2800000, guid: 4481bc53f14ccf04bb39ef9b78a16534, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: display_BaseColor
+    second: {fileID: 2800000, guid: c8e5062392b13144496cfdb6e7b95bdc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: door_BaseColor
+    second: {fileID: 2800000, guid: 7297c24deac1d164aadff8e7cb6a737e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: fish_box
+    second: {fileID: 2800000, guid: 2dbbe39a02d871c4faef0b61abe7e2d0, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: grapes
+    second: {fileID: 2800000, guid: 065b6d7a115295a4d897e8dee3e05e78, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jar_1
+    second: {fileID: 2800000, guid: bc373063e975f9f42bb92392666182d2, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: jar_4
+    second: {fileID: 2800000, guid: a497c0af4c384c842b38db40e43781f4, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: lemon
+    second: {fileID: 2800000, guid: d6fce211027f5434f9d601c2ffb5d762, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: meat
+    second: {fileID: 2800000, guid: a00ec84c0859458419a1636a57b510c8, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: meat_1
+    second: {fileID: 2800000, guid: 1f662907cbfbf9d4983feeeed952b8bc, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: saled
+    second: {fileID: 2800000, guid: 6fd61130c03658c448b072d83523e05a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: shake
+    second: {fileID: 2800000, guid: 3aa4c33c1b40d104a8846c0cb21b8b9d, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vegetables
+    second: {fileID: 2800000, guid: 6a7b2c628e91cc547b3ecca6cc57e789, type: 3}
+  materials:
+    materialImportMode: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 0
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    sortHierarchyByName: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    fileIdsGeneration: 2
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    skinWeightsMode: 0
+    maxBonesPerVertex: 4
+    minBoneWeight: 0.001
+    meshOptimizationFlags: -1
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  referencedClips: []
+  importAnimation: 1
+  humanDescription:
+    serializedVersion: 3
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    globalScale: 1
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  autoGenerateAvatarMappingIfUnspecified: 1
+  animationType: 2
+  humanoidOversampling: 1
+  avatarSetup: 0
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
