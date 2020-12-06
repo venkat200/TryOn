@@ -8,7 +8,7 @@ public class PlacementController : MonoBehaviour
 {
     private ARRaycastManager raycastManager;
 
-    private GameObject placementBase;
+    public GameObject placementBase;
 
     public bool placementIsValid = false;
 

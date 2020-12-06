@@ -10,7 +10,6 @@ public class ObjectRotate : MonoBehaviour
 
     public int AllowRotation = 1;
 
-    public GameObject cameraModule; 
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +19,7 @@ public class ObjectRotate : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (cameraModule.activeSelf)
+        if (GameObject.Find("Camera") != null)
             AllowRotation = 1;
         else
             AllowRotation = 0;
