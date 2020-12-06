@@ -19,19 +19,19 @@ MonoBehaviour:
       m_GuidLow: 5678417134548463369
       m_GuidHigh: 7581318288303247286
     m_SerializedTextureGuid:
-      m_GuidLow: 109274163925371889
-      m_GuidHigh: 1816341301430378104
-    m_Size: {x: 0.1, y: 0.1}
+      m_GuidLow: 8702186488141900289
+      m_GuidHigh: 11757997073513699322
+    m_Size: {x: 0.1, y: 0.10533563}
     m_SpecifySize: 1
-    m_Name: ImageTracking_Watch
-    m_Texture: {fileID: 2800000, guid: ebe64bf13845018478dea04ecaf03419, type: 3}
+    m_Name: ImageTrackingWatch
+    m_Texture: {fileID: 2800000, guid: 3ae6ea01608178c4fad7ddb40acc2ca3, type: 3}
   - m_SerializedGuid:
       m_GuidLow: 4756463168441129686
       m_GuidHigh: 2691823982259288761
     m_SerializedTextureGuid:
-      m_GuidLow: 13277803631364821508
-      m_GuidHigh: 399918242571831337
-    m_Size: {x: 0.1, y: 0.075}
+      m_GuidLow: 5045318443948302423
+      m_GuidHigh: 9407230730372399035
+    m_Size: {x: 0.1, y: 0.08172414}
     m_SpecifySize: 1
-    m_Name: ImageTracking_Statue
-    m_Texture: {fileID: 2800000, guid: cce452043c0db8442948b1d385cb8c05, type: 3}
+    m_Name: ImageTrackingStatue
+    m_Texture: {fileID: 2800000, guid: be43e05792644604bb3ffcf381328d82, type: 3}
