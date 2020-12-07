@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Lean.Touch;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -70,6 +71,22 @@ public class ARController : MonoBehaviour
         TryARPage_Item_7.SetActive(false);
 
         PlaneTrackingLoading_Panel.SetActive(false);
+
+        Item_1_Refrigerator.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_2_TV_TableTop.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_3_Sofa.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_4_Table.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_5_TV_WallMount.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_6_Watch.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_7_Statue.GetComponent<LeanTwistRotateAxis>().enabled = false;
+
+        Item_1_Refrigerator.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_2_TV_TableTop.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_3_Sofa.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_4_Table.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_5_TV_WallMount.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_6_Watch.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_7_Statue.GetComponent<LeanDragTranslate>().enabled = false;
     }
 
     // Update is called once per frame
@@ -512,6 +529,22 @@ public class ARController : MonoBehaviour
     {
         currentProduct = productID;
 
+        Item_1_Refrigerator.GetComponent<LeanTwistRotateAxis>().enabled = true;
+        Item_2_TV_TableTop.GetComponent<LeanTwistRotateAxis>().enabled = true;
+        Item_3_Sofa.GetComponent<LeanTwistRotateAxis>().enabled = true;
+        Item_4_Table.GetComponent<LeanTwistRotateAxis>().enabled = true;
+        Item_5_TV_WallMount.GetComponent<LeanTwistRotateAxis>().enabled = true;
+        Item_6_Watch.GetComponent<LeanTwistRotateAxis>().enabled = true;
+        Item_7_Statue.GetComponent<LeanTwistRotateAxis>().enabled = true;
+
+        Item_1_Refrigerator.GetComponent<LeanDragTranslate>().enabled = true;
+        Item_2_TV_TableTop.GetComponent<LeanDragTranslate>().enabled = true;
+        Item_3_Sofa.GetComponent<LeanDragTranslate>().enabled = true;
+        Item_4_Table.GetComponent<LeanDragTranslate>().enabled = true;
+        Item_5_TV_WallMount.GetComponent<LeanDragTranslate>().enabled = true;
+        Item_6_Watch.GetComponent<LeanDragTranslate>().enabled = true;
+        Item_7_Statue.GetComponent<LeanDragTranslate>().enabled = true;
+
         StartCoroutine(LoadingTryARPage(productID));
     }
 
@@ -540,6 +573,22 @@ public class ARController : MonoBehaviour
         PlaneTrackingLoading_Panel.SetActive(false);
 
         placeInAR = false;
+
+        Item_1_Refrigerator.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_2_TV_TableTop.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_3_Sofa.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_4_Table.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_5_TV_WallMount.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_6_Watch.GetComponent<LeanTwistRotateAxis>().enabled = false;
+        Item_7_Statue.GetComponent<LeanTwistRotateAxis>().enabled = false;
+
+        Item_1_Refrigerator.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_2_TV_TableTop.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_3_Sofa.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_4_Table.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_5_TV_WallMount.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_6_Watch.GetComponent<LeanDragTranslate>().enabled = false;
+        Item_7_Statue.GetComponent<LeanDragTranslate>().enabled = false;
 
         ResetPosition();
 
