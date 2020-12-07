@@ -18,13 +18,14 @@ public class ARController : MonoBehaviour
     public GameObject DescriptionCamera;
     public GameObject DescriptionPage_Item_1, DescriptionPage_Item_2, DescriptionPage_Item_3, DescriptionPage_Item_4, DescriptionPage_Item_5, DescriptionPage_Item_6, DescriptionPage_Item_7;
 
-    int currentProduct = 0;
+    public int currentProduct = 0;
 
     public GameObject TryARPage_Item_1, TryARPage_Item_2, TryARPage_Item_3, TryARPage_Item_4, TryARPage_Item_5, TryARPage_Item_6, TryARPage_Item_7;
     public GameObject PlaneTrackingLoading_Panel;
 
     bool placeInAR = false;
-    
+    public bool objectPlacedInAR = false;
+
     private PlacementController placementController;
     public GameObject placementBase;
     // Start is called before the first frame update
@@ -79,54 +80,61 @@ public class ARController : MonoBehaviour
             if(currentProduct == 1)
             {
                 Item_1_Refrigerator.SetActive(true);
-                Item_1_Refrigerator.transform.localPosition = placementController.transform.position;
-                Item_1_Refrigerator.transform.localRotation = placementController.transform.rotation;
-
+                Item_1_Refrigerator.transform.position = placementController.transform.position;
+                Item_1_Refrigerator.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
             else if(currentProduct == 2)
             {
                 Item_2_TV_TableTop.SetActive(true);
-                Item_2_TV_TableTop.transform.localPosition = placementController.transform.position;
-                Item_2_TV_TableTop.transform.localRotation = placementController.transform.rotation;
-
+                Item_2_TV_TableTop.transform.position = placementController.transform.position;
+                Item_2_TV_TableTop.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
             else if (currentProduct == 3)
             {
                 Item_3_Sofa.SetActive(true);
-                Item_3_Sofa.transform.localPosition = placementController.transform.position;
-                Item_3_Sofa.transform.localRotation = placementController.transform.rotation;
-
+                Item_3_Sofa.transform.position = placementController.transform.position;
+                Item_3_Sofa.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
             else if (currentProduct == 4)
             {
                 Item_4_Table.SetActive(true);
-                Item_4_Table.transform.localPosition = placementController.transform.position;
-                Item_4_Table.transform.localRotation = placementController.transform.rotation;
-
+                Item_4_Table.transform.position = placementController.transform.position;
+                Item_4_Table.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
             else if (currentProduct == 5)
             {
                 Item_5_TV_WallMount.SetActive(true);
-                Item_5_TV_WallMount.transform.localPosition = placementController.transform.position;
-                Item_5_TV_WallMount.transform.localRotation = placementController.transform.rotation;
-
+                Item_5_TV_WallMount.transform.position = placementController.transform.position;
+                Item_5_TV_WallMount.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
+            /*
             else if (currentProduct == 6)
             {
                 Item_6_Watch.SetActive(true);
-                Item_6_Watch.transform.localPosition = placementController.transform.position;
-                Item_6_Watch.transform.localRotation = placementController.transform.rotation;
-
+                Item_6_Watch.transform.position = placementController.transform.position;
+                Item_6_Watch.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
             else if (currentProduct == 7)
             {
                 Item_7_Statue.SetActive(true);
-                Item_7_Statue.transform.localPosition = placementController.transform.position;
-                Item_7_Statue.transform.localRotation = placementController.transform.rotation;
-
+                Item_7_Statue.transform.position = placementController.transform.position;
+                Item_7_Statue.transform.rotation = placementController.transform.rotation;
+                placeInAR = false;
+                objectPlacedInAR = true;
             }
-
-            placeInAR = false;
+            */
         }
     }
 
@@ -222,6 +230,7 @@ public class ARController : MonoBehaviour
         {
             DescriptionPage_Item_3.SetActive(true);
             Item_3_Sofa.SetActive(true);
+            Item_3_Sofa.transform.localScale = new Vector3(0.88172f, 0.88172f, 0.88172f);
 
             DescriptionCamera.transform.localPosition = new Vector3(0, 0.557f, 3.736f);
             DescriptionCamera.transform.localEulerAngles = new Vector3(0, -180, 0);
@@ -469,6 +478,7 @@ public class ARController : MonoBehaviour
         if (productID != 6 && productID != 7)
         {
             placementController.placementIsValid = false;
+            objectPlacedInAR = false;
         }
 
         yield return new WaitForSeconds(4);
@@ -492,8 +502,8 @@ public class ARController : MonoBehaviour
 
         if(productID != 6 && productID !=7)
         {
-            placeInAR = true;
             yield return new WaitUntil(() => placementController.placementIsValid == true);
+            placeInAR = true;
             PlaneTrackingLoading_Panel.SetActive(false);
         }
     }
@@ -525,7 +535,13 @@ public class ARController : MonoBehaviour
         Item_6_Watch.SetActive(false);
         Item_7_Statue.SetActive(false);
 
+        objectPlacedInAR = false;
+
         PlaneTrackingLoading_Panel.SetActive(false);
+
+        placeInAR = false;
+
+        ResetPosition();
 
         StartCoroutine(LoadProductDescription(currentProduct));
     }

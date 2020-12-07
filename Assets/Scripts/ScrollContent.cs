@@ -24,9 +24,9 @@ public class ScrollContent : MonoBehaviour
         }
         else
         {
-            if(Mathf.Abs(this.GetComponent<RectTransform>().offsetMax.y - this.GetComponent<RectTransform>().offsetMin.y - 1136.0f) > 5)
+            if(Mathf.Abs(this.GetComponent<RectTransform>().offsetMax.y - this.GetComponent<RectTransform>().offsetMin.y - 1297.0f) > 5)
             {
-                this.GetComponent<RectTransform>().offsetMin = new Vector2(this.GetComponent<RectTransform>().offsetMin.x, -1136.0f);
+                this.GetComponent<RectTransform>().offsetMin = new Vector2(this.GetComponent<RectTransform>().offsetMin.x, -1297.0f);
                 this.GetComponent<RectTransform>().offsetMax = new Vector2(this.GetComponent<RectTransform>().offsetMax.x, 0.0f);
             }
         }

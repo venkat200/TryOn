@@ -12,12 +12,14 @@ public class PlacementController : MonoBehaviour
 
     public bool placementIsValid = false;
 
+    private ARController arController;
     // Start is called before the first frame update
     void Start()
     {
         raycastManager = FindObjectOfType<ARRaycastManager>();
-        placementBase = transform.GetChild(0).gameObject;
+        arController = FindObjectOfType<ARController>();
 
+        placementBase = transform.GetChild(0).gameObject;
         placementBase.SetActive(false);
     }
 
@@ -34,7 +36,7 @@ public class PlacementController : MonoBehaviour
             transform.position = hits[0].pose.position;
             transform.rotation = hits[0].pose.rotation;
 
-            if(!placementBase.activeInHierarchy)
+            if(!placementBase.activeInHierarchy && !arController.objectPlacedInAR)
             {
                 placementBase.SetActive(true); 
             }
