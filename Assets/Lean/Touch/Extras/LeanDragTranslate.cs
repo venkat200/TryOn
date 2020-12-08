@@ -101,15 +101,15 @@ namespace Lean.Touch
 			var newRemainingTranslation = Vector3.Lerp(remainingTranslation, Vector3.zero, factor);
 
             /*
-            // Original Code
+            // Motion along XYX - Code
             // Shift this transform by the change in delta
 			transform.localPosition = oldPosition + remainingTranslation - newRemainingTranslation;
             */
 
             ////
-            //// Custom Modified Code
+            //// Motion along XZ - Code
             Vector3 changeInDelta = remainingTranslation - newRemainingTranslation;
-            changeInDelta.z = -1 * changeInDelta.y;
+            changeInDelta.z = 1 * changeInDelta.y;
             changeInDelta.y = 0;
 
             transform.localPosition = oldPosition + changeInDelta;

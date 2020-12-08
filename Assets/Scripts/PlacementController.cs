@@ -41,6 +41,9 @@ public class PlacementController : MonoBehaviour
                 placementBase.SetActive(true); 
             }
 
+            if (arController.objectPlacedInAR)
+                placementBase.SetActive(false);
+
             placementIsValid = true;
         }
 

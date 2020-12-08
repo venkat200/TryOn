@@ -14,6 +14,7 @@ public class ARController : MonoBehaviour
     public GameObject Transition;
 
     public GameObject Item_1_Refrigerator, Item_2_TV_TableTop, Item_3_Sofa, Item_4_Table, Item_5_TV_WallMount, Item_6_Watch, Item_7_Statue;
+    Transform Item_1_Refrigerator_Transform, Item_2_TV_TableTop_Transform, Item_3_Sofa_Transform, Item_4_Table_Transform, Item_5_TV_WallMount_Transform, Item_6_Watch_Transform, Item_7_Statue_Transform;
 
     public GameObject PlaneTrackingCamera, ImageTracking_1_Camera, ImageTracking_2_Camera; 
     public GameObject DescriptionCamera;
@@ -87,6 +88,14 @@ public class ARController : MonoBehaviour
         Item_5_TV_WallMount.GetComponent<LeanDragTranslate>().enabled = false;
         Item_6_Watch.GetComponent<LeanDragTranslate>().enabled = false;
         Item_7_Statue.GetComponent<LeanDragTranslate>().enabled = false;
+
+        Item_1_Refrigerator_Transform = Item_1_Refrigerator.transform;
+        Item_2_TV_TableTop_Transform = Item_2_TV_TableTop.transform;
+        Item_3_Sofa_Transform = Item_3_Sofa.transform;
+        Item_4_Table_Transform = Item_4_Table.transform;
+        Item_5_TV_WallMount_Transform = Item_5_TV_WallMount.transform;
+        Item_6_Watch_Transform = Item_6_Watch.transform;
+        Item_7_Statue_Transform = Item_7_Statue.transform;
     }
 
     // Update is called once per frame
@@ -98,7 +107,8 @@ public class ARController : MonoBehaviour
             {
                 Item_1_Refrigerator.SetActive(true);
                 Item_1_Refrigerator.transform.position = placementController.transform.position;
-                Item_1_Refrigerator.transform.rotation = placementController.transform.rotation;
+                // Item_1_Refrigerator.transform.rotation =  placementController.transform.rotation;
+                Item_1_Refrigerator.transform.rotation = Quaternion.Euler(placementController.transform.rotation.x, placementController.transform.rotation.y + 180, placementController.transform.rotation.z);
                 placeInAR = false;
                 objectPlacedInAR = true;
             }
@@ -106,7 +116,8 @@ public class ARController : MonoBehaviour
             {
                 Item_2_TV_TableTop.SetActive(true);
                 Item_2_TV_TableTop.transform.position = placementController.transform.position;
-                Item_2_TV_TableTop.transform.rotation = placementController.transform.rotation;
+                // Item_2_TV_TableTop.transform.rotation = placementController.transform.rotation;
+                Item_2_TV_TableTop.transform.rotation =  Quaternion.Euler(placementController.transform.rotation.x, placementController.transform.rotation.y + 180, placementController.transform.rotation.z);
                 placeInAR = false;
                 objectPlacedInAR = true;
             }
@@ -114,7 +125,8 @@ public class ARController : MonoBehaviour
             {
                 Item_3_Sofa.SetActive(true);
                 Item_3_Sofa.transform.position = placementController.transform.position;
-                Item_3_Sofa.transform.rotation = placementController.transform.rotation;
+                // Item_3_Sofa.transform.rotation = placementController.transform.rotation;
+                Item_3_Sofa.transform.rotation =  Quaternion.Euler(placementController.transform.rotation.x, placementController.transform.rotation.y + 180, placementController.transform.rotation.z);
                 placeInAR = false;
                 objectPlacedInAR = true;
             }
@@ -122,7 +134,8 @@ public class ARController : MonoBehaviour
             {
                 Item_4_Table.SetActive(true);
                 Item_4_Table.transform.position = placementController.transform.position;
-                Item_4_Table.transform.rotation = placementController.transform.rotation;
+                // Item_4_Table.transform.rotation = placementController.transform.rotation;
+                Item_4_Table.transform.rotation =  Quaternion.Euler(placementController.transform.rotation.x, placementController.transform.rotation.y + 180, placementController.transform.rotation.z);
                 placeInAR = false;
                 objectPlacedInAR = true;
             }
@@ -131,27 +144,10 @@ public class ARController : MonoBehaviour
                 Item_5_TV_WallMount.SetActive(true);
                 Item_5_TV_WallMount.transform.position = placementController.transform.position;
                 Item_5_TV_WallMount.transform.rotation = placementController.transform.rotation;
+                // Item_5_TV_WallMount.transform.rotation =  Quaternion.Euler(placementController.transform.rotation.x, placementController.transform.rotation.y + 180, placementController.transform.rotation.z);
                 placeInAR = false;
                 objectPlacedInAR = true;
             }
-            /*
-            else if (currentProduct == 6)
-            {
-                Item_6_Watch.SetActive(true);
-                Item_6_Watch.transform.position = placementController.transform.position;
-                Item_6_Watch.transform.rotation = placementController.transform.rotation;
-                placeInAR = false;
-                objectPlacedInAR = true;
-            }
-            else if (currentProduct == 7)
-            {
-                Item_7_Statue.SetActive(true);
-                Item_7_Statue.transform.position = placementController.transform.position;
-                Item_7_Statue.transform.rotation = placementController.transform.rotation;
-                placeInAR = false;
-                objectPlacedInAR = true;
-            }
-            */
         }
     }
 
@@ -175,6 +171,14 @@ public class ARController : MonoBehaviour
 
     public void ResetPosition()
     {
+        Item_1_Refrigerator.transform.SetPositionAndRotation(Item_1_Refrigerator_Transform.position, Item_1_Refrigerator_Transform.rotation);
+        Item_2_TV_TableTop.transform.SetPositionAndRotation(Item_2_TV_TableTop_Transform.position, Item_2_TV_TableTop_Transform.rotation);
+        Item_3_Sofa.transform.SetPositionAndRotation(Item_3_Sofa_Transform.position, Item_3_Sofa_Transform.rotation);
+        Item_4_Table.transform.SetPositionAndRotation(Item_4_Table_Transform.position, Item_4_Table_Transform.rotation);
+        Item_5_TV_WallMount.transform.SetPositionAndRotation(Item_5_TV_WallMount_Transform.position, Item_5_TV_WallMount_Transform.rotation);
+        Item_6_Watch.transform.SetPositionAndRotation(Item_6_Watch_Transform.position, Item_6_Watch_Transform.rotation);
+        Item_7_Statue.transform.SetPositionAndRotation(Item_7_Statue_Transform.position, Item_7_Statue_Transform.rotation);
+
         Item_1_Refrigerator.transform.localPosition = new Vector3(-0.6585374f, 1.852345f, 2.253419f);
         Item_1_Refrigerator.transform.localEulerAngles = new Vector3(0, 0, 0);
         Item_1_Refrigerator.transform.localScale = new Vector3(1, 1, 1);
@@ -201,7 +205,7 @@ public class ARController : MonoBehaviour
 
         Item_7_Statue.transform.localPosition = new Vector3(0, 0, 0);
         Item_7_Statue.transform.localEulerAngles = new Vector3(0, 0, 0);
-        Item_7_Statue.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
+        Item_7_Statue.transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
     }
 
 
@@ -293,7 +297,9 @@ public class ARController : MonoBehaviour
             DescriptionPage_Item_7.SetActive(true);
             Item_7_Statue.SetActive(true);
 
+            Item_7_Statue.transform.localPosition = new Vector3(0, 0, 0);
             Item_7_Statue.transform.localEulerAngles = new Vector3(0, 37.7f, 0);
+            Item_7_Statue.transform.localScale = new Vector3(0.4f, 0.4f, 0.4f);
 
             DescriptionCamera.transform.localPosition = new Vector3(0.663f, -1.371f, -1.46f);
             DescriptionCamera.transform.localEulerAngles = new Vector3(30, -180, 0);
